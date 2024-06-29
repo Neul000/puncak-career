@@ -1,0 +1,118 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(236, 236, 216);
+}
+
+header {
+    background-color: rgb(179, 75, 75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 35px;
+    width: 85px;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding-bottom: 60px; /* Adds space below the container */
+}
+
+.box {
+    display: flex;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.aboutus {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contactus {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #9A7B47;
+    border-radius: 10px;
+}
+
+.aboutus p {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+.aboutus img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contacts1,
+.contacts2,
+.contacts3 {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    margin-bottom: 35px;
+    width: calc(100% - 40px); /* Ensures proper alignment */
+}
+
+.contacts1 p,
+contacts2 p,
+contacts3 p {
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contacts1 i,
+contacts2 i,
+contacts3 i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative; /* Removes fixed positioning */
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/xsl" href="tablejob.xsl"?>
+
+<jobportal xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com tablejob.xsd">
+    <employers>
+        <employersdetails>
+            <employerID>EMP001</employerID>
+            <companyname>Tech Innovators Inc.</companyname>
+            <registrationnumber>123456789</registrationnumber>
+            <contactperson>Ahamd Qusyairi</contactperson>
+            <contactemail>techinnovators@gmail.com</contactemail>
+            <contactphone>03-25688495</contactphone>
+            <companyaddress>Tech Lane, Innovation City, Jalan Ampang</companyaddress>
+            <companystate>Wilayah Persekutuan Kuala Lumpur</companystate>
+            <companypostalcode>50450</companypostalcode>
+            <industry>Technology</industry>
+        </employersdetails>
+
+        <employersdetails>
+            <employerID>EMP002</employerID>
+            <companyname>Green Energy Solutions</companyname>
+            <registrationnumber>987654321</registrationnumber>
+            <contactperson>Yun Li Ang</contactperson>
+            <contactemail>greenenergy@gmail.com</contactemail>
+            <contactphone>03-55447785</contactphone>
+            <companyaddress>789 Renewable St, Eco City, Georgetown</companyaddress>
+            <companystate>Pulau Pinang</companystate>
+            <companypostalcode>10250</companypostalcode>
+            <industry>Energy</industry>
+        </employersdetails>
+		
+		<employersdetails>
+            <employerID>EMP003</employerID>
+            <companyname>Healthcare Heroes</companyname>
+            <registrationnumber>564738291</registrationnumber>
+            <contactperson>Muhamad Azimi</contactperson>
+            <contactemail>healthcareheroes@gmail.com</contactemail>
+            <contactphone>03-47382210</contactphone>
+            <companyaddress>456 Wellness Blvd, Health City, Petaling Jaya</companyaddress>
+            <companystate>Selangor</companystate>
+            <companypostalcode>47400</companypostalcode>
+            <industry>Healthcare</industry>
+        </employersdetails>
+    </employers>
+
+    <jobListing>
+	
+		<jobListingdetails>
+            <jobID>JOB001</jobID>
+            <jobtitle>Software Engineer</jobtitle>
+            <jobtype>Part-time</jobtype>
+            <salaryrange>RM3000-RM4500</salaryrange>
+            <qualification>Bachelor's degree in Data Science or related field</qualification>
+        </jobListingdetails>
+		
+		<jobListingdetails>
+            <jobID>JOB003</jobID>
+            <jobtitle>Data Analyst</jobtitle>
+            <jobtype>Full-time</jobtype>
+            <salaryrange>RM5000-RM6000</salaryrange>
+            <qualification>Bachelor's degree in Computer Science or related field</qualification>
+        </jobListingdetails>
+	
+        <jobListingdetails>
+            <jobID>JOB003</jobID>
+            <jobtitle>Data Analyst</jobtitle>
+            <jobtype>Part-time</jobtype>
+            <salaryrange>RM3000-RM4500</salaryrange>
+            <qualification>Bachelor's degree in Data Science or related field</qualification>
+        </jobListingdetails>
+    </jobListing>
+
+    <jobapplicants>
+        <jobapplicantsdetails>
+            <applicantID>APP001</applicantID>
+            <studentID>2023556699</studentID>
+            <applicationdate>10/05/2024</applicationdate>
+            <applicationstatus>Pending</applicationstatus>
+        </jobapplicantsdetails>
+		
+		<jobapplicantsdetails>
+            <applicantID>APP002</applicantID>
+            <studentID>2023114478</studentID>
+            <applicationdate>12/05/2024</applicationdate>
+            <applicationstatus>Pending</applicationstatus>
+        </jobapplicantsdetails>
+		
+		<jobapplicantsdetails>
+            <applicantID>APP003</applicantID>
+            <studentID>2023414596</studentID>
+            <applicationdate>20/05/2024</applicationdate>
+            <applicationstatus>Accepted</applicationstatus>
+        </jobapplicantsdetails>
+		
+    </jobapplicants>
+
+    <student>
+        <studentdetails>
+            <studentID>2023556699</studentID>
+            <studentname>Siti Asiyah binti Ahmad</studentname>
+            <studentcollege>Uitm Puncak Perdana</studentcollege>
+            <studentemail>sitiasiyah@student.uitm.edu.my</studentemail>
+            <studenthp>014-5563838</studenthp>
+            <dateofbirth>05/11/2002</dateofbirth>
+            <fieldofstudy>Content Management</fieldofstudy>
+			<yearofstudy>3</yearofstudy>
+            <cgpa>3.8</cgpa>
+        </studentdetails>
+		
+		<studentdetails>
+            <studentID>2023114478</studentID>
+            <studentname>Azir bin AlHaitham</studentname>
+            <studentcollege>Uitm Puncak Alam</studentcollege>
+            <studentemail>aZir@student.uitm.edu.my</studentemail>
+            <studenthp>010-8793322</studenthp>
+            <dateofbirth>12/02/2002</dateofbirth>
+            <fieldofstudy>Environmental Science</fieldofstudy>
+			<yearofstudy>3</yearofstudy>
+            <cgpa>4.0</cgpa>
+        </studentdetails>
+		
+		<studentdetails>
+            <studentID>2023414596</studentID>
+            <studentname>Lee Arif Hoshina </studentname>
+            <studentcollege>Uitm Puncak Perdana</studentcollege>
+            <studentemail>leearif@student.uitm.edu.my</studentemail>
+            <studenthp>012-4563389</studenthp>
+            <dateofbirth>15/07/2002</dateofbirth>
+            <fieldofstudy>Data Science</fieldofstudy>
+			<yearofstudy>4</yearofstudy>
+            <cgpa>3.7</cgpa>
+        </studentdetails>
+
+      
+    </student>
+</jobportal>

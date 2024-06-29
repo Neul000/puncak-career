@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
+    <xs:element name="jobPosting">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jobTitle" type="xs:string"/>
+                <xs:element name="salaryRate" type="xs:string"/>
+                <xs:element name="workingHours" type="xs:string"/>
+                <xs:element name="employerName" type="xs:string"/>
+                <xs:element name="employerContact" type="xs:string"/>
+                <xs:element name="jobDescription" type="xs:string"/>
+                <xs:element name="location" type="xs:string"/>
+                <xs:element name="employmentType" type="xs:string"/>
+                <xs:element name="applicationDeadline" type="xs:date"/>
+                <xs:element name="jobRequirements">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="requirement" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

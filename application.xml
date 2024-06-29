@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobPosting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="application.xsd">
+    <jobTitle>Software Engineer</jobTitle>
+    <salaryRate>5000</salaryRate>
+    <workingHours>9am - 5pm</workingHours>
+    <employerName>ABC Corp</employerName>
+    <employerContact>1234567890</employerContact>
+    <jobDescription>Responsible for developing software solutions.</jobDescription>
+    <location>New York, NY</location>
+    <employmentType>Full-time</employmentType>
+    <applicationDeadline>2024-07-31</applicationDeadline>
+    <jobRequirements>
+        <requirement>Bachelor's degree in Computer Science</requirement>
+    </jobRequirements>
+</jobPosting>

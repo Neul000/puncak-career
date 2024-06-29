@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pictures/peakcareerslogo.png" alt="Job Hunting Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="mainmenu.html">Home</a></li>
+                <li><a href="availablejobs.html">Find Jobs</a></li>
+                <li><a href="form.html">Post a Job</a></li>
+                <li><a href="contactus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Post a Job</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="salary-rate">Salary Rate:</label>
+                <input type="text" id="salary-rate" name="salary-rate" required>
+            </div>
+            <div class="form-group">
+                <label for="working-hours">Working Hours:</label>
+                <input type="text" id="working-hours" name="working-hours" required>
+            </div>
+            <div class="form-group">
+                <label for="employer-name">Employer Name:</label>
+                <input type="text" id="employer-name" name="employer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="employer-contact">Employer Contact Number:</label>
+                <input type="text" id="employer-contact" name="employer-contact" required>
+            </div>
+            <div class="form-group">
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" name="job-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="employment-type">Employment Type:</label>
+                <select id="employment-type" name="employment-type" required>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="contract">Contract</option>
+                    <option value="internship">Internship</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="application-deadline">Application Deadline:</label>
+                <input type="date" id="application-deadline" name="application-deadline" required>
+            </div>
+            <div class="form-group">
+                <label for="job-requirements">Job Requirements:</label>
+                <textarea id="job-requirements" name="job-requirements" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Job Hunting Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

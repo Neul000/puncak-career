@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="jobportal">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="employers">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="employersdetails" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="employerID">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="EMP\d{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="companyname" type="xs:string"/>
+                                    <xs:element name="registrationnumber">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{9}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="contactperson" type="xs:string"/>
+                                    <xs:element name="contactemail">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="contactphone">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{2}[-]\d{8}"/>
+                                                <xs:length value="11"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="companyaddress" type="xs:string"/>
+                                    <xs:element name="companystate">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Perlis"/>
+                                                <xs:enumeration value="Kedah"/>
+                                                <xs:enumeration value="Pulau Pinang"/>
+                                                <xs:enumeration value="Perak"/>
+                                                <xs:enumeration value="Kelantan"/>
+                                                <xs:enumeration value="Terengganu"/>
+                                                <xs:enumeration value="Pahang"/>
+                                                <xs:enumeration value="Selangor"/>
+                                                <xs:enumeration value="Negeri Sembilan"/>
+                                                <xs:enumeration value="Melaka"/>
+                                                <xs:enumeration value="Johor"/>
+                                                <xs:enumeration value="Sabah"/>
+                                                <xs:enumeration value="Sarawak"/>
+                                                <xs:enumeration value="Wilayah Persekutuan Kuala Lumpur"/>
+                                                <xs:enumeration value="Wilayah Persekutuan Putrajaya"/>
+                                                <xs:enumeration value="Wilayah Persekutuan Labuan"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="companypostalcode">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:totalDigits value="5"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="industry">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Technology"/>
+                                                <xs:enumeration value="Energy"/>
+                                                <xs:enumeration value="Healthcare"/>
+                                                <xs:enumeration value="Finance"/>
+                                                <xs:enumeration value="Education"/>
+                                                <xs:enumeration value="Manufacturing"/>
+                                                <xs:enumeration value="Retail"/>
+                                                <xs:enumeration value="Other"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="jobListing">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="jobListingdetails" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="jobID">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="JOB\d{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="jobtitle" type="xs:string"/>
+                                    <xs:element name="jobtype">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Full-time"/>
+                                                <xs:enumeration value="Part-time"/>
+                                                <xs:enumeration value="Internship"/>
+                                                <xs:enumeration value="Contract"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="salaryrange">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="RM\d{4}-RM\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="qualification" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="jobapplicants">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="jobapplicantsdetails" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="applicantID">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="APP\d{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="studentID">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{10}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="applicationdate">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="applicationstatus">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Pending"/>
+                                                <xs:enumeration value="Accepted"/>
+                                                <xs:enumeration value="Rejected"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="student">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="studentdetails" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="studentID">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{10}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="studentname" type="xs:string"/>
+                                    <xs:element name="studentcollege" type="xs:string"/>
+                                    <xs:element name="studentemail">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="studenthp">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{3}-\d{7}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="dateofbirth">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="fieldofstudy" type="xs:string"/>
+                                    <xs:element name="yearofstudy">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:minInclusive value="1"/>
+                                                <xs:maxInclusive value="4"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="cgpa">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:decimal">
+                                                <xs:minInclusive value="0.00"/>
+                                                <xs:maxInclusive value="4.00"/>
+                                                <xs:fractionDigits value="2"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
